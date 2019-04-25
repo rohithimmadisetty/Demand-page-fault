@@ -14,8 +14,8 @@ int main()
         EAT<=(1-p)Memory_access_time + p(page_fault_service time)
         page fault service time=(replaced modified time*time to service a page fault when page is modified)+
 		                        ((1-replaced modified time)*time to service a page fault whenpage is empty)*/
-	float p=modified_time*pagefault_modified+(1-modified_time)*pagefault_empty;
-	pagefault_rate=(MApagefault-MAT)/(p-MAT);
+	float page_fault_service time=modified_time*pagefault_modified+(1-modified_time)*pagefault_empty;
+	pagefault_rate=(MApagefault-MAT)/(page_fault_service_time-MAT);
 	cout<<" Maximum accaepatble page fault_rate rate is "<<pagefault_rate;
 	
 }
