@@ -11,7 +11,7 @@ int main()
 	float MApagefault=200*pow(10,-9);
 	float pagefault_rate;
 	//formula for efficient acceptable time is  
-//                      EAT<=(1-p)Memory_access_time + p(page_fault_over_head)
+        // EAT<=(1-p)Memory_access_time + p(page_fault_over_head)
 	float x=modified_time*pagefault_modified+(1-modified_time)*pagefault_empty;
 	pagefault_rate=(MApagefault-MAT)/(x-MAT);
 	cout<<" Maximum accaepatble page fault_rate rate is "<<pagefault_rate;
